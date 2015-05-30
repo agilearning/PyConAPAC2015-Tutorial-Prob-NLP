@@ -16,7 +16,11 @@ RUN curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/py
 
 RUN echo 'eval "$(pyenv init -)"' >  /root/.bashrc
 
-RUN pyenv install anaconda-2.1.0 && pyenv global anaconda-2.1.0 && conda update -y anaconda && conda install -y gensim && pip install python-crfsuite
+RUN pyenv install anaconda-2.1.0 && pyenv global anaconda-2.1.0 
+
+RUN conda update anaconda 
+RUN conda install gensim  
+RUN pip install python-crfsuite
 
 RUN ipython profile create
 
