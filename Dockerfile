@@ -47,6 +47,8 @@ RUN cd /demo && git clone https://github.com/fxsjy/jieba.git && cd /demo/jieba &
 
 WORKDIR /demo
 
+EXPOSE 8888
+
 CMD ipython notebook --no-browser --ip=0.0.0.0 --port 8888 --profile=$IPYNB_PROFILE
 
 
