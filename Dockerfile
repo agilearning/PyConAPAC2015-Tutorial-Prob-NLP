@@ -1,7 +1,8 @@
 
-FROM c3h3/pyenv-opencv-shogun:agilearning
+FROM ubuntu:14.04.1
 
 MAINTAINER Chia-Chi Chang <c3h3.tw@gmail.com>
+
 
 ENV DEBIAN_FRONTEND noninteractive
 
